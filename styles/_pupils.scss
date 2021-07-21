@@ -1,0 +1,38 @@
+.classmates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    font-family: 'Yomogi', cursive;
+
+    .pupils {
+        height: 400px;
+        width: 300px;
+        margin: 10px;
+        padding: 30px;
+        color: rgb(43, 41, 41);
+        border: 2px solid #ccc;
+        border-radius: 35px;
+        position: relative;
+
+        font-weight: bold;
+        // line-break: 5px;
+        background-image: url('../images/poza\ zoom.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        .card-header {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1.2em;
+                font-weight: bolder;
+        }
+
+        :not( :first-child) {
+            margin-top: 50px;
+        }
+    }
+}
